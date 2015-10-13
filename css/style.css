@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "fira_sansbook";
+    src: url('../fonts/firasans-book-webfont.eot');
+    src: url('../fonts/firasans-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-book-webfont.woff2') format('woff2'),
+         url('../fonts/firasans-book-webfont.woff') format('woff'),
+         url('../fonts/firasans-book-webfont.ttf') format('truetype'),
+         url('../fonts/firasans-book-webfont.svg#fira_sansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.clearfix:before, .clearfix:after{
+	content:" ";
+	display: table;
+}
+.clearfix:after{
+	clear:both;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	/*font-family: fira_sansbook,sans-serif;*/
+	font-family: 'Fira Sans', sans-serif;
+	/*font-family: "fira_sansbook",sans-serif;*/
+	background: url("../img/bgBody.png");
+	height:100%;
+}
+
+.wrapper{
+	min-width:970px;
+}
+.header{
+	min-height:119px;
+	background: #eff3f7 url("../img/bgHeader.png") center bottom no-repeat;
+	
+}
+	
+	.headerCenter{
+		max-width:1200px;
+		min-width: 960px;
+		margin: 0 auto;
+		position:relative;
+	}
+
+	.logo{
+		position: absolute;;
+		top:39px;
+		left:0;
+	}
+
+	.socList{
+		position: absolute;
+		top:35px;
+		right:0;
+	}
+		.socList ul{
+			list-style: none;
+			margin: 0;
+		}
+			.socList ul li{
+				float:left;
+				width:47px;
+				height:47px;
+				margin:0 24px 0 0;
+			}
+				.socList ul li:last-child{
+					margin:0;
+				}
+
+				.socList ul li.socListVk{
+					background: url("../img/spriteSoc.png") -5px -119px no-repeat;
+				}
+					.socList ul li.socListVk:hover{
+						background: url("../img/spriteSoc.png") -62px -119px no-repeat;
+					}
+
+				.socList ul li.socListTw{
+					background: url("../img/spriteSoc.png") -119px -5px no-repeat;
+				}
+					.socList ul li.socListTw:hover{
+						background: url("../img/spriteSoc.png") -119px -62px no-repeat;
+					}
+
+				.socList ul li.socListFb{
+					background: url("../img/spriteSoc.png") -5px -5px no-repeat;
+				}
+					.socList ul li.socListFb:hover{
+						background: url("../img/spriteSoc.png") -62px -5px no-repeat;
+					}
+
+				.socList ul li.socListGit{
+					background: url("../img/spriteSoc.png") -5px -62px no-repeat;
+				}
+					.socList ul li.socListGit:hover{
+						background: url("../img/spriteSoc.png") -62px -62px no-repeat;
+					}
+
+				.socList ul li a{
+					display: block;
+					height:100%;
+					width:100%;
+				}
+
+					.socList ul li a span{
+						display: none;
+					}
+
+.middle{
+	padding:39px 0 0 0;
+}
+
+.sidebar{
+	float:left;
+	width:300px;
+}
+	.sidebarMenu{
+		width:250px;
+		border-radius: 2px;
+		background: #eff3f7;
+		overflow: hidden; /* для скругленных уголоков первого и последнего элементов, в которых свой фон */
+	}
+		.sidebarMenu ul{
+			list-style: none;
+			margin:0;
+			padding:0;
+		}
+			.sidebarMenu ul li{
+				/*height:71px;*/
+				padding:0 10px;
+
+			}
+				.sidebarMenu ul li.active{
+					background: #3ba8c0;
+					/*border-radius: 2px;*/ /* для скругленных уголоков первого и последнего элементов если .sidebarMenu{overflow: hidden;} этого не надо*/
+				}
+					.sidebarMenu ul li.active a{
+						border-bottom:2px solid #3ba8c0;
+						color:#fff;
+					}
+					.sidebarMenu ul li.active a:hover{
+						color:#fff;
+					}
+				.sidebarMenu ul li a{
+					display: block;
+					padding:26px 0 20px 18px;
+					border-bottom:2px solid #eff3f7;
+					text-decoration: none;
+					font-size: 21px;
+					color:#959aa8;
+				}
+
+				.sidebarMenu ul li a:hover{
+					border-bottom:2px solid #3ba8c0;
+					color:#3ba8c0;
+				}
+	.sidebarContacts{
+		margin:23px 0 0;
+		background: #3ba8c0;
+		border-radius: 2px;
+		width:250px;
+	}
+		.sidebarContacts h2{
+			font-size:21px;
+			font-weight: 400;
+			color:#fff;
+			padding:13px 0 0 20px;
+			margin:0;
+			height:11px;
+		}
+
+		.sidebarContacts ul{
+			list-style: none;
+			padding:0;
+		}
+			.sidebarContacts ul li{
+				height:40px;
+			}
+				.sidebarContacts ul li a{
+					display:block;
+					text-decoration: none;
+					color:#fff;
+					padding:10px 0 0 83px;
+				}
+					.sidebarContacts ul li a:hover{
+						text-decoration: underline;
+					}
+				.sidebarContactsEmail{
+					background: #41b9d4 url(../img/email.png) 40px 11px no-repeat;
+				}
+
+				.sidebarContactsPhone{
+					background: #48cbe8 url(../img/telefon.png) 40px 11px no-repeat;
+				}
+
+				.sidebarContactsSkype{
+					background: #51daf8 url(../img/skype.png) 40px 11px no-repeat;
+					border-radius: 0 0 2px 2px;
+				}
+
+.centerMiddle{
+	width:970px;
+	margin:0 auto;
+}
+	.content{
+		padding:0 0 0 310px;
+	}
+		.contentBlockMain{
+			 border-radius: 4px;
+			 background: #eff3f7;
+			 margin:0 0 26px 0;
+			 padding: 0 0 46px 0;
+		}
+
+			.contentBlockMainH{
+				display:inline-block;
+				padding:18px 22px 17px 22px;
+				color:#3ba8c0;
+				font-size:27px;
+				border-bottom: 2px solid #3ba8c0;
+				margin:0;
+			}
+
+			.anketaPhoto{
+				display:inline-block;
+				width:149px;
+				padding:35px 17px 0 54px;
+				vertical-align:top;
+			}
+			
+			.anketaList{
+				display: inline-block;
+				width:400px;
+				padding:0 0 0 5px;
+			}
+				.listData{
+					list-style: none;
+					padding:0;
+					margin:22px 0 0;
+				}
+				 .listData li{
+				 	color:#37424d;
+				 	font-size:15px;
+				 	margin:0 0 13px 0;
+
+				 }
+				 	.listData li strong{
+						font-size: 17px;
+						padding: 0 13px 0 0;
+				 	}
+
+				 	.features{
+				 		display: inline;
+				 		list-style: none;
+				 	}
+				 		.features li{
+				 			display: inline;
+				 			padding:0 20px;
+				 		}
+
+			.listWord, .education{
+				list-style: none;
+				padding: 0;
+				margin:25px 0 0;
+			}
+				.listWord li{
+					margin: 0 0 21px;
+				}
+				.listWord p{
+					margin: 0 0 2px;
+				}
+				.listWord li, .education1, .education2{
+					
+					padding: 0 0 0 125px;
+				}
+
+			.listWord{
+				margin:25px 0 0;
+			}
+
+			.education{
+				margin:22px 0 0;	
+			}
+				.education li{
+					margin: 0 0 21px;
+				}
+				.education p{
+					margin: 0 0 2px;
+				}
+
+				
+				
+
+				.education1{
+					background: url("../img/head.png") 56px 4px no-repeat;
+				}
+
+				.education2{
+					background: url("../img/doc.png") 62px 2px no-repeat;
+				}
+
+				.listWord li{
+					background: url("../img/bag.png") 57px 1px no-repeat;
+				}
+					.listWord li:last-child{
+						margin: 0;
+					}
+
+.footer{
+	height: 80px;
+	background: #eff3f7 url("../img/bgHeader.png") center top no-repeat;
+}
+	.footerRelative{
+		position: relative;
+	}	
+
+	.footerPersonalArea{
+		position: absolute;
+		background: url("../img/lock.png") no-repeat;
+		width:20px;
+		height:32px;
+		top:26px;
+		left:30px;
+	}		
+		.footerPersonalArea a{
+			display: block;
+			height:100%;
+		}
+		
+		.footerCopyright{
+			text-align: center;
+			color:#4a545d;
+			font-size: 13px;
+			padding: 22px 0 0;
+		}
